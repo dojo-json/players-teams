@@ -11,8 +11,10 @@ var TeamSchema = new Schema({
     lowercase: true,
     trim: true,
   },
+  roster: [{type: Schema.Types.ObjectId, ref: 'Player'}]
 });
 
 module.exports = mongoose.model('Team', TeamSchema);
+
 
 // teams in the database

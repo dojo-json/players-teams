@@ -1,6 +1,7 @@
 var express = require('express'),
     bp = require('body-parser'),
     path = require('path');
+require(path.resolve('server','config','db'));
 
 var app = express();
 app.use(bp.json());
